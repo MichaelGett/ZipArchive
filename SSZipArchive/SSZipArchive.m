@@ -890,7 +890,7 @@ BOOL _fileIsSymbolicLink(const unz_file_info *fileInfo);
 
 - (BOOL)writeFileAtPath:(NSString *)path withFileName:(nullable NSString *)fileName withPassword:(nullable NSString *)password
 {
-    return [self writeFileAtPath:path withFileName:fileName compressionLevel:Z_DEFAULT_COMPRESSION password:password AES:YES];
+    return [self writeFileAtPath:path withFileName:fileName compressionLevel:Z_DEFAULT_COMPRESSION password:password AES:NO];
 }
 
 // supports writing files with logical folder/directory structure
